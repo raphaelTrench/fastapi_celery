@@ -41,7 +41,7 @@ services:
     logging:
       driver: syslog
       options:
-        syslog-address: "tcp+tls://logs4.papertrailapp.com:45546"
+        syslog-address: "tcp+tls://logs4.papertrailapp.com:PORT"
         tag: "{{.Name}}/{{.ID}}"
     volumes:
       - .:/app
